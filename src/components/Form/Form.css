@@ -1,0 +1,23 @@
+.form {
+  position: relative;
+  background-color: #fff;
+  justify-content: flex-end;
+}
+
+.form__block {
+  display: flex;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 80%;
+  min-height: 60px;
+  border-radius: 20px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.form__block_tip {
+  background-color: #cfd1db;
+  align-items: center;
+  color: var(--main-text);
+}

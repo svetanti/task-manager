@@ -1,0 +1,26 @@
+.app {
+  --main-grey: #dfdfe5;
+  --light-grey: #f4f4f8;
+  --dark-grey: #666a74;
+  --white: #fff;
+  --main-text: #131213;
+  --important: red;
+  --not-urgent: green;
+
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--main-grey);
+}
+
+.app__wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
