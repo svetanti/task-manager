@@ -22,7 +22,7 @@ const Form = () => {
         ? (<form className='form form__block'/*  onBlur={disableEditMode} */ >
           <Input editMode={editMode} selectedOption={selectedOption} />
           <Date handleDateChange={() => console.log('Кря')} />
-          <Select selectedOption={selectedOption} handleChange={handleSelectChange} />
+          <Select selectedOption={selectedOption} handleSelect={handleSelectChange} />
         </form>)
         : (<div className='form__block form__block_tip' onClick={enableEditMode} >
           Write a new task
