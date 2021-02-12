@@ -1,20 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Select = () => {
-  const [selectedOption, setSelectedOption] = useState('');
-
-  const handleChange = (evt) => {
-    handleMarkChange(evt);
-  };
-
-
-  console.log(selectedOption)
-  const handleMarkChange = (evt) => setSelectedOption(evt.target.value.split(' ').join('-').toLowerCase());
-
+const Select = ({ selectedOption, handleChange }) => {
   return (
     <div className='select'>
       <div className={`select__color select__color_type_${selectedOption}`}></div>
-      <select className='select__item' onChange={handleChange}>
+      <select className='select__item' onChange={handleChange} value={selectedOption}>
         <option>No list</option>
         <option>Important</option>
         <option>Not urgent</option>

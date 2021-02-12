@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Input = () => {
+const Input = ({ selectedOption }) => {
   const [value, setValue] = useState('');
 
   const handleChange = (evt) => {
@@ -13,9 +13,10 @@ const Input = () => {
 
   return (
     <label className='input'>
-      <div className='input__list-marker'></div>
-      {/* <span className='input__text input__text_type_task'>{task}</span>
-      <span className='input__text input__text_type_note'>{note}</span> */}
+      <div className={`input__list-marker input__list-marker_type_${selectedOption}`}></div>
+      <div className='input__note'>
+        <div className='input__task'>{task ? task : 'Write a new task'}</div>
+        {note === '//' ? '// Wtite a note' : note}</div>
       <input
         className='input__field'
         value={value}
