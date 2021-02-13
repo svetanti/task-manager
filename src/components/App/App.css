@@ -4,8 +4,8 @@
   --dark-grey: #666a74;
   --white: #fff;
   --main-text: #131213;
-  --important: red;
-  --not-urgent: green;
+  --important: #ff4136;
+  --not-urgent: #39cccc;
 
   display: flex;
   flex-direction: column;

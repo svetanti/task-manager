@@ -1,0 +1,45 @@
+.task {
+  margin-bottom: 20px;
+  overflow-wrap: anywhere;
+}
+
+.task:last-of-type {
+  margin-bottom: 0;
+}
+
+.task::before {
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.task__type_no-list::before {
+  border: 3px solid var(--dark-grey);
+  background-color: var(--main-grey);
+}
+.task__type_important::before {
+  background-color: var(--important);
+}
+.task__type_not-urgent::before {
+  background-color: var(--not-urgent);
+}
+
+.task__date {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--dark-grey);
+}
+
+.task__task {
+  font-size: 18px;
+  margin: 0;
+}
+
+.task__note {
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  color: var(--dark-grey);
+}

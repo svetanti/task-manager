@@ -8,3 +8,4 @@ body {
 @import url('./components/Date/Date.css');
 @import url('./components/Select/Select.css');
 @import url('./components/List/List.css');
+@import url('./components/Task/Task.css');
