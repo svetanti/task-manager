@@ -13,6 +13,5 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 );
 
-window.__store__ = store;
 
 export default store;

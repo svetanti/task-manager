@@ -1,5 +1,5 @@
 .form {
-  background-color: #fff;
+  background-color: var(--white);
   justify-content: flex-end;
   align-items: center;
 }
@@ -17,7 +17,16 @@
 }
 
 .form__block_tip {
-  background-color: #cfd1db;
+  background-color: var(--grey);
   align-items: center;
-  color: var(--main-text);
+  color: var(--dark-grey);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    row-gap: 20px;
+  }
 }

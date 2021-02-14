@@ -1,6 +1,7 @@
 .select {
   position: relative;
   height: 40px;
+  width: min-content;
 }
 
 .select__item {
@@ -40,4 +41,10 @@
 }
 .select__color_type_not-urgent {
   background-color: var(--not-urgent);
+}
+
+@media screen and (max-width: 500px) {
+  .select {
+    margin-left: auto;
+  }
 }

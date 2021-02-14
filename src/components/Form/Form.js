@@ -30,7 +30,7 @@ const Form = (props) => {
     disableEditMode();
     setTaskData({
       task: '',
-      date: '',
+      date: currentDate,
       list: 'no-list'
     });
   }
@@ -42,7 +42,11 @@ const Form = (props) => {
     <>
       { editMode
         ? (<form className='form form__block' onSubmit={handleSubmit} ref={formRef}>
-          <Input editMode={editMode} selectedOption={selectedOption} value={taskData.task} handleChange={handleChange} />
+          <Input
+            editMode={editMode}
+            selectedOption={selectedOption}
+            value={taskData.task}
+            handleChange={handleChange} />
           <Date handleDateChange={handleChange} />
           <Select selectedOption={selectedOption} handleChange={handleChange} />
         </form>)

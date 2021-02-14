@@ -1,9 +1,11 @@
 .app {
   --main-grey: #dfdfe5;
+  --grey: #cfd1db;
   --light-grey: #f4f4f8;
   --dark-grey: #666a74;
   --white: #fff;
   --main-text: #131213;
+  --note-text: #7d5f35;
   --important: #ff4136;
   --not-urgent: #39cccc;
 

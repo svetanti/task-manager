@@ -21,22 +21,24 @@
   position: absolute;
   left: 0;
   top: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .input__note {
   width: 100%;
-  color: #7d5f35;
+  color: var(--note-text);
   overflow-wrap: anywhere;
   margin-left: 10px;
   align-self: center;
 }
 
 .input__task {
-  color: #000;
+  color: var(--main-text);
   float: left;
   margin-right: 10px;
+}
+
+.input__placeholder {
+  color: var(--dark-grey);
 }
 
 .input__list-marker {
@@ -56,4 +58,11 @@
 }
 .input__list-marker_type_not-urgent {
   background-color: var(--not-urgent);
+}
+
+@media screen and (max-width: 500px) {
+  .input {
+    grid-column: 1/3;
+    width: 100%;
+  }
 }

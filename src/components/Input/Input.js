@@ -8,8 +8,11 @@ const Input = ({ selectedOption, value, handleChange }) => {
   return (
     <label className='input'>
       <div className={`input__list-marker input__list-marker_type_${selectedOption}`}></div>
-      <div className='input__note'>
-        <div className='input__task'>{taskText ? taskText : 'Write a new task'}</div>
+      <div className={`input__note ${!noteText && 'input__placeholder'}`}>
+        <div className={`input__task ${!taskText && 'input__placeholder'}`}>
+          {taskText
+            ? taskText
+            : 'Write a new task'}</div>
         {noteText === '//' ? '// Write a note' : noteText}</div>
       <input
         className='input__field'
